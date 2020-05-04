@@ -1,6 +1,4 @@
-#маркировка pytest -s -v -m "smoke and win10" test_fixture81.py запустит тесты по маркерам
-#если нужно пропустить тест, можно использовать @pytest.mark.skip:
-
+#маркировка. помечаем как ожидаемо падающий тест
 import pytest
 from selenium import webdriver
 
@@ -16,15 +14,17 @@ def browser():
     browser.quit()
 
 
-class TestMainPage1(object):
+class TestMainPage1():
 
-    @pytest.mark.smoke
     def test_guest_should_see_login_link(self, browser):
         browser.get(link)
         browser.find_element_by_css_selector("#login_link")
 
-    @pytest.mark.smoke
-    @pytest.mark.win10
     def test_guest_should_see_basket_link_on_the_main_page(self, browser):
         browser.get(link)
         browser.find_element_by_css_selector(".basket-mini .btn-group > a")
+#помечаем что тест упадет и это норма
+    @pytest.mark.xfail
+    def test_guest_should_see_search_button_on_the_main_page(self, browser):
+        browser.get(link)
+        browser.find_element_by_css_selector("button.favorite")
