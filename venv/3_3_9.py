@@ -24,3 +24,9 @@ def test_exception2():
             pytest.fail("Не должно быть кнопки Отправить")
     finally:
         browser.quit()
+#У кого последний pytest, там устарел параметр  message в строке with pytest.raises(NoSuchElementException, message="Не должно быть кнопки Отправить")
+
+#теперь так
+with pytest.raises(NoSuchElementException):
+    browser.find_element_by_css_selector("button.btn")
+    pytest.fail("Не должно быть кнопки Отправить")
