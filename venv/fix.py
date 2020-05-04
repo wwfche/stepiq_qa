@@ -2,9 +2,7 @@ from selenium import webdriver
 
 link = "http://selenium1py.pythonanywhere.com/"
 
-#setup_class(self) и teardown_class(self) вместе с @classmethod запускаются один раз перед всеми методами (setup) и закрываются также один раз (teardown).
-#!!! запускается и закрывается один раз!!!
-# А в случае с setup_method(self) и teardown_method(self) оборачивается каждый исполняемый метод.
+
 class TestMainPage1():
 
     @classmethod
@@ -25,7 +23,6 @@ class TestMainPage1():
         self.browser.get(link)
         self.browser.find_element_by_css_selector(".basket-mini .btn-group > a")
 
-
 class TestMainPage2():
 
     def setup_method(self):
@@ -43,4 +40,3 @@ class TestMainPage2():
     def test_guest_should_see_basket_link_on_the_main_page(self):
         self.browser.get(link)
         self.browser.find_element_by_css_selector(".basket-mini .btn-group > a")
-
