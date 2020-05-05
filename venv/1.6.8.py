@@ -15,6 +15,7 @@ try:
     email = browser.find_element_by_class_name("third")
     email.send_keys("test@test.ru")
 
+
     time.sleep(2)
     ...
 
