@@ -21,6 +21,7 @@ try:
 
     # Отправляем заполненную форму
     button = browser.find_element_by_css_selector("button.btn")
+    assert button.is_enabled()
     button.click()
 
     # Проверяем, что смогли зарегистрироваться

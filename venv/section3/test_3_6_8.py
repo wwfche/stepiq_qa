@@ -10,4 +10,5 @@ def test_guest_should_see_login_link_pass(browser):
 
     button = browser.find_element_by_xpath('//*[@id="add_to_basket_form"]/button')
     #но в задаче попросили воткнуть assert зачем? хз!
-    assert button == browser.find_element_by_xpath('//*[@id="add_to_basket_form"]/button')
+    #assert button == browser.find_element_by_xpath('//*[@id="add_to_basket_form"]/button')
+    assert button.is_enabled()
