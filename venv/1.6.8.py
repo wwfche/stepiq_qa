@@ -14,7 +14,7 @@ try:
     last.send_keys("ivanov")
     email = browser.find_element_by_class_name("third")
     email.send_keys("test@test.ru")
-
+    browser.find_element_by_class_name("btn-add-to-baske")
 
     time.sleep(2)
     ...
