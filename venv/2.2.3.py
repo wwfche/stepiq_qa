@@ -20,6 +20,7 @@ try:
     browser.find_element_by_css_selector("[value='" + w + "']").click()
    # browser.find_element_by_css_selector("[value=w]").click()
     browser.find_element_by_css_selector("[type='submit']").click()
+    browser.current_url
 
 
 finally:
