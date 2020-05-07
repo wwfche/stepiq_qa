@@ -7,6 +7,6 @@ class ElementLocators():
 #локаторы для проектов
     TITLE_ELEMENT_PROJECT_MAIN = (By.CSS_SELECTOR, "[title='test_title_element_project_main']")
     TITLE_ANONS_PROJECT_MAIN = (By.CSS_SELECTOR, "[title='test_title_anons_project_main']")
-    TITLE_ELEMENT_PROJECT_SECOND = (By.CSS_SELECTOR, "[title='test_title_element_project_second']")
-
+    TITLE_ELEMENT_PROJECT_SECOND_1 = (By.CSS_SELECTOR, "[title='test_title_element_project_second1']")
+    TITLE_ELEMENT_PROJECT_SECOND_2 = (By.CSS_SELECTOR, "[title='test_title_element_project_second2']")
 
