@@ -13,3 +13,4 @@ class Project_Page(BasePage):
 
     def should_be_title_element_second_2(self):
         assert self.is_element_present(*ElementLocators.TITLE_ELEMENT_PROJECT_SECOND_2), "No title element SECOND 2"
+
