@@ -12,8 +12,7 @@ class Press_Pages(BasePage):
         #self.should_be_title_tag()
         assert self.is_element_present(*ElementLocators.TITLE_ANONS), "No title anons "
 
-    def should_be_title_anons_summa(self):
-        assert self.is
+
 
 
 #class Press_Main_News(BasePage):
