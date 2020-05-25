@@ -27,3 +27,9 @@ def test_compant_tag_srok(browser):
     page = Company_Page(browser, link)
     page.open()
     page.should_be_tag_srok()
+
+def test_compact_tag_format(browser):
+    link = "https://nota:media@ssd.notamedia.ru/company/"
+    page = Company_Page(browser, link)
+    page.open()
+    page.should_be_title_format()

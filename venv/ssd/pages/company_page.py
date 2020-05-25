@@ -19,3 +19,9 @@ class Company_Page(BasePage):
     def should_be_tag_srok(self):
         assert self.is_element_present(*ElementLocators.TITLE_IMG_SROK), "Not Title SROK"
         assert self.is_element_present(*ElementLocators.ALT_IMG_SROK), "No ALT SROK"
+
+    def should_be_title_format(self):
+        assert self.is_element_present(*ElementLocators.TITLE_DVOR), "No Title DVOR"
+        assert self.is_element_present(*ElementLocators.TITLE_OTDELKA), "No Title OTDELKA"
+        assert self.is_element_present(*ElementLocators.TITLE_FASAD), "No Title FASAD"
+        assert self.is_element_present(*ElementLocators.TITLE_BESEDKA), "No Title BESEDKA"

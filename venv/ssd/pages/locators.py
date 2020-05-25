@@ -21,3 +21,10 @@ class ElementLocators():
     ALT_IMG_SROK = (By.CSS_SELECTOR, "[alt='test_alt_srok']")
 
 
+#локаторы формат светлый мир
+    TITLE_DVOR = (By.CSS_SELECTOR, "[title='test_title_dvor']")
+    TITLE_OTDELKA = (By.CSS_SELECTOR, "[title='test_title_otdelka']")
+    TITLE_FASAD = (By.CSS_SELECTOR, "[title='test_title_fasad]")
+    TITLE_BESEDKA = (By.CSS_SELECTOR, "[title='test_title_besedka']")
+
+
