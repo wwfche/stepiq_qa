@@ -4,7 +4,7 @@ from .pages.base_page import BasePage
 import time
 
 def test_zaebal(browser):
-    link = "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/?promo=newYear2019"
+    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7"
     page = ProductPage(browser, link)
     page.open()
     page.should_be_product_page()
