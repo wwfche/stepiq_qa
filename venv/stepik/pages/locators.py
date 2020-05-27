@@ -14,5 +14,9 @@ class ProductPageLocators():
     PRICE = (By.CSS_SELECTOR, '.product_main .price_color')
     NAME = (By.CSS_SELECTOR, '.product_main h1')
     ALERT_LIST = (By.CSS_SELECTOR, '.alertinner strong')
-    SUCCESS_MESSAGES = (By.CSS_SELECTOR, ".alertinner strong")
+    xyz = (By.CSS_SELECTOR, ".alertinner strong")
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    HEADER_CARD = (By.CSS_SELECTOR, "[href='/ru/basket/']")
